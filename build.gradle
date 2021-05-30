@@ -8,7 +8,6 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
-
 javafx {
     version = '12'
     modules = [ 'javafx.controls' ]
@@ -17,4 +16,10 @@ javafx {
 
 dependencies {
     compile 'io.reactivex.rxjava3:rxjava:3.0.4'
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    implementation 'org.openjdk.jmh:jmh-java-benchmark-archetype:1.27'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.16'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
 }
